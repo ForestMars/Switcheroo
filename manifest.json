@@ -2,7 +2,7 @@
   "name": "Switcheroo for Gmail",
   "short_name": "Switcheroo",
   "description": "Reply to Intro emails with Switcheroo: Moves 'From:'' address to 'BCC:' and other recipients into the 'To:' field.",
-  "version": "0.1",
+  "version": "0.11",
   "content_scripts": [
     {
       "matches": [

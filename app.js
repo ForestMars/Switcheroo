@@ -58,7 +58,10 @@ logo = chrome.runtime.getURL('img/icon32.png');
             var cc_email = cc_arr[t][1]["emailAddress"];
 
           // @TODO: try/catch
-            if (cc_name == null) { cc_name = cc_email; }
+            if (cc_name == null || name == undefined) { 
+              email_name = cc_email.substring(0, cc_email.indexOf('@'));
+              cc_name = email_name; 
+              }
             cc_field = [cc_name + ' <'+ cc_email + '>'];
             ccs.push(cc_field);
           //ccs.push(cc_name + ' <' + cc_email + '>');
